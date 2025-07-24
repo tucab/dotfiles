@@ -114,7 +114,7 @@ alias flbegone='flatpak remove'
 # system
 alias reboot='systemctl reboot'
 alias poweroff='systemctl poweroff'
-alias unpack='sudo apt update && sudo apt upgrade && sudo apt install -y zsh curl git && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && sudo mkdir -p /mnt/gaming && sudo mount /dev/nvme0n1 /mnt/gaming && cd /mnt/gaming/stuffs && sudo cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && sudo cp DejaVuSansMono.zip /usr/share/fonts && sudo cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && sudo cp Infinity-0.4.2.tar.gz /usr/share/icons && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
+alias unpack='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && sudo mkdir -p /mnt/gaming && sudo mount /dev/nvme0n1 /mnt/gaming && cd /mnt/gaming/stuffs && sudo cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && sudo cp DejaVuSansMono.zip /usr/share/fonts && sudo cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && sudo cp Infinity-0.4.2.tar.gz /usr/share/icons && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
 
 # other
 alias nano='kate'

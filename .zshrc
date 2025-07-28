@@ -121,7 +121,7 @@ alias unpack='cd /mnt/gaming/stuffs && doas cp all-posy-s-cursor-sets.tar.xz /us
 
 # other
 alias nano='kate'
-#alias cat='bat'
+alias cat='bat'
 alias mkdir='mkdir -p'
 alias cd...='cd ../..'
 

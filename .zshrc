@@ -107,18 +107,18 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='doas apk add'
-alias begone='doas apk del'
-alias scavenge='apk search'
-alias update='doas apk update && doas apk upgrade && flatpak update'
+alias acquire='sudo apt add'
+alias begone='sudo apt del'
+alias scavenge='apt search'
+alias update='sudo apt update && sudo apt upgrade && flatpak update'
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
 alias flscavenge='flatpak search'
 
 # system
-alias reboot='doas loginctl reboot'
-alias poweroff='doas loginctl poweroff'
-alias unpack='cd /mnt/gaming/stuffs && doas cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && doas tar -xvf /usr/share/icons/all-posy-s-cursor-sets.tar.xz && doas cp DejaVuSansMono.zip /usr/share/fonts && doas unzip /usr/share/fonts/DejaVuSansMono.zip && doas cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && doas unzip /usr/share/themes/Catppuccin-Macchiato-Standard-Lavender-Dark.zip && doas cp Infinity-0.4.2.tar.gz /usr/share/icons && doas tar -xvzf /usr/share/icons/Infinity-0.4.2.tar.gz && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
+alias reboot='sudo loginctl reboot'
+alias poweroff='sudo loginctl poweroff'
+alias unpack='cd /mnt/gaming/stuffs && sudo cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && sudo tar -xvf /usr/share/icons/all-posy-s-cursor-sets.tar.xz && sudo cp DejaVuSansMono.zip /usr/share/fonts && sudo unzip /usr/share/fonts/DejaVuSansMono.zip && sudo cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && sudo unzip /usr/share/themes/Catppuccin-Macchiato-Standard-Lavender-Dark.zip && sudo cp Infinity-0.4.2.tar.gz /usr/share/icons && sudo tar -xvzf /usr/share/icons/Infinity-0.4.2.tar.gz && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
 #above is largely a personal command, practically useless to anyone else
 alias getmusic='cd ~/Music && yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 320k --embed-thumbnail --add-metadata --postprocessor-args "-id3v2_version 3" https://www.youtube.com/watch?v=R4GPA7fEjlY&list=PL97UGhU3AUzFLHJBeygle3p42ItOtskNt'
 

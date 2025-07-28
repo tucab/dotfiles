@@ -113,6 +113,7 @@ alias scavenge='apk search'
 alias update='doas apk update && doas apk upgrade && flatpak update'
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
+alias flscavenge='flatpak search'
 
 # system
 alias reboot='doas loginctl reboot'

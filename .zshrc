@@ -8,15 +8,18 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="funky"
+ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "peepcode" "simonoff" "steeef" "sunrise" "zhann" "catppuccin" )
 
-fastfetch
+CATPPUCCIN_FLAVOR="macchiato"
+CATPPUCCIN_SHOW_TIME=true
+
+hyfetch
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -104,17 +107,17 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='sudo apt-fast install'
-alias begone='sudo apt-fast remove'
-alias scavenge='apt search'
-alias update='sudo apt-fast update && sudo apt-fast upgrade && flatpak update'
+alias acquire='doas apk add'
+alias begone='doas apk del'
+alias scavenge='apk search'
+alias update='doas apk update && doas apk upgrade && flatpak update'
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
 
 # system
-alias reboot='systemctl reboot'
-alias poweroff='systemctl poweroff'
-alias unpack='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && sudo mkdir -p /mnt/gaming && sudo mount /dev/nvme0n1 /mnt/gaming && cd /mnt/gaming/stuffs && sudo cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && sudo cp DejaVuSansMono.zip /usr/share/fonts && sudo cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && sudo cp Infinity-0.4.2.tar.gz /usr/share/icons && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
+alias reboot='doas loginctl reboot'
+alias poweroff='doas loginctl poweroff'
+alias unpack='cd /mnt/gaming/stuffs && doas cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && doas tar -xvf /usr/share/icons/all-posy-s-cursor-sets.tar.xz && doas cp DejaVuSansMono.zip /usr/share/fonts && doas unzip /usr/share/fonts/DejaVuSansMono.zip && doas cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && doas unzip /usr/share/themes/Catppuccin-Macchiato-Standard-Lavender-Dark.zip && doas cp Infinity-0.4.2.tar.gz /usr/share/icons && doas tar -xvzf /usr/share/icons/Infinity-0.4.2.tar.gz && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
 
 # other
 alias nano='kate'
@@ -122,4 +125,6 @@ alias nano='kate'
 alias mkdir='mkdir -p'
 alias cd...='cd ../..'
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/juno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval $(thefuck --alias)

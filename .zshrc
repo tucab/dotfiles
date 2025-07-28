@@ -119,6 +119,7 @@ alias flscavenge='flatpak search'
 alias reboot='doas loginctl reboot'
 alias poweroff='doas loginctl poweroff'
 alias unpack='cd /mnt/gaming/stuffs && doas cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && doas tar -xvf /usr/share/icons/all-posy-s-cursor-sets.tar.xz && doas cp DejaVuSansMono.zip /usr/share/fonts && doas unzip /usr/share/fonts/DejaVuSansMono.zip && doas cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && doas unzip /usr/share/themes/Catppuccin-Macchiato-Standard-Lavender-Dark.zip && doas cp Infinity-0.4.2.tar.gz /usr/share/icons && doas tar -xvzf /usr/share/icons/Infinity-0.4.2.tar.gz && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
+#above is largely a personal command, practically useless to anyone else
 
 # other
 alias nano='kate'

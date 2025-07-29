@@ -14,12 +14,12 @@ ZSH_THEME="random"
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "peepcode" "simonoff" "steeef" "sunrise" "zhann" "catppuccin" )
+ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "peepcode" "simonoff" "steeef" "zhann" "catppuccin" )
 
 CATPPUCCIN_FLAVOR="macchiato"
 CATPPUCCIN_SHOW_TIME=true
 
-hyfetch
+fastfetch
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -107,10 +107,11 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='sudo apt add'
-alias begone='sudo apt del'
-alias scavenge='apt search'
-alias update='sudo apt update && sudo apt upgrade && flatpak update'
+alias acquire='sudo xbps-install'
+alias begone='sudo xbps-remove'
+alias scavenge='xbps-query -Rs'
+alias update='sudo xbps-install -Syu && flatpak update'
+alias havei='xbps-query'
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
 alias flscavenge='flatpak search'
@@ -120,7 +121,6 @@ alias reboot='sudo loginctl reboot'
 alias poweroff='sudo loginctl poweroff'
 alias unpack='cd /mnt/gaming/stuffs && sudo cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && sudo tar -xvf /usr/share/icons/all-posy-s-cursor-sets.tar.xz && sudo cp DejaVuSansMono.zip /usr/share/fonts && sudo unzip /usr/share/fonts/DejaVuSansMono.zip && sudo cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && sudo unzip /usr/share/themes/Catppuccin-Macchiato-Standard-Lavender-Dark.zip && sudo cp Infinity-0.4.2.tar.gz /usr/share/icons && sudo tar -xvzf /usr/share/icons/Infinity-0.4.2.tar.gz && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
 #above is largely a personal command, practically useless to anyone else
-alias getmusic='cd ~/Music && yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 320k --embed-thumbnail --add-metadata --postprocessor-args "-id3v2_version 3" https://www.youtube.com/watch?v=R4GPA7fEjlY&list=PL97UGhU3AUzFLHJBeygle3p42ItOtskNt'
 
 # other
 alias nano='kate'
@@ -128,6 +128,8 @@ alias cat='bat'
 alias mkdir='mkdir -p'
 alias cd...='cd ../..'
 
-source /home/juno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 eval $(thefuck --alias)
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Created by `pipx` on 2025-07-29 00:19:22
+export PATH="$PATH:/home/juno/.local/bin"

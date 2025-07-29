@@ -1,1 +1,1 @@
-Hi! This is my personal dotfiles repo for easier setup for linux installs because im a distrohopper lol.
+Hi! This are my personal dotfiles for easier setup during linux installs.

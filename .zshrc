@@ -8,16 +8,16 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="dst"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "peepcode" "simonoff" "steeef" "zhann" "catppuccin" )
+ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "simonoff" "steeef" "zhann" )
 
-CATPPUCCIN_FLAVOR="macchiato"
-CATPPUCCIN_SHOW_TIME=true
+#CATPPUCCIN_FLAVOR="macchiato"
+#CATPPUCCIN_SHOW_TIME=true
 
 fastfetch
 
@@ -107,11 +107,11 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='sudo xbps-install'
-alias begone='sudo xbps-remove'
-alias scavenge='xbps-query -Rs'
-alias update='sudo xbps-install -Syu && flatpak update'
-alias havei='xbps-query'
+alias acquire='sudo apt-fast install'
+alias begone='sudo apt remove'
+alias scavenge='apt search'
+alias update='sudo apt update && sudo apt upgrade && flatpak update'
+alias havei='apt list --installed | grep'
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
 alias flscavenge='flatpak search'
@@ -133,3 +133,4 @@ eval $(thefuck --alias)
 
 # Created by `pipx` on 2025-07-29 00:19:22
 export PATH="$PATH:/home/juno/.local/bin"
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

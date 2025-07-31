@@ -19,7 +19,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" 
 #CATPPUCCIN_FLAVOR="macchiato"
 #CATPPUCCIN_SHOW_TIME=true
 
-fastfetch
+# fastfetch
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -119,8 +119,6 @@ alias flscavenge='flatpak search'
 # system
 alias reboot='sudo loginctl reboot'
 alias poweroff='sudo loginctl poweroff'
-alias unpack='cd /mnt/gaming/stuffs && sudo cp all-posy-s-cursor-sets.tar.xz /usr/share/icons && sudo tar -xvf /usr/share/icons/all-posy-s-cursor-sets.tar.xz && sudo cp DejaVuSansMono.zip /usr/share/fonts && sudo unzip /usr/share/fonts/DejaVuSansMono.zip && sudo cp Catppuccin-Macchiato-Standard-Lavender-Dark.zip /usr/share/themes && sudo unzip /usr/share/themes/Catppuccin-Macchiato-Standard-Lavender-Dark.zip && sudo cp Infinity-0.4.2.tar.gz /usr/share/icons && sudo tar -xvzf /usr/share/icons/Infinity-0.4.2.tar.gz && cd fastfetch && mkdir -p ~/.config/fastfetch && cp config.jsonc ~/.config/fastfetch && cd .. && cd pics && cp * /home/juno/Pictures && cd && cat /mnt/gaming/stuffs/apps'
-#above is largely a personal command, practically useless to anyone else
 
 # other
 alias nano='kate'
@@ -129,8 +127,5 @@ alias mkdir='mkdir -p'
 alias cd...='cd ../..'
 
 eval $(thefuck --alias)
-# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Created by `pipx` on 2025-07-29 00:19:22
-export PATH="$PATH:/home/juno/.local/bin"
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fastfetch

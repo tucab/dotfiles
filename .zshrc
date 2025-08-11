@@ -62,3 +62,6 @@ alias flrun='flatpak run'
 # system
 alias reboot='systemctl reboot'
 alias poweroff='systemctl poweroff'
+# misc
+unalias gg
+alias gg='exit'

@@ -58,7 +58,6 @@ alias havei='rpm list | grep'
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
 alias flscavenge='flatpak search'
-alias flrun='flatpak run'
 # system
 alias reboot='systemctl reboot'
 alias poweroff='systemctl poweroff'

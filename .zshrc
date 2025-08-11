@@ -1,11 +1,10 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="dst"
+ZSH_THEME="simplerich"
 
 # ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "simonoff" "steeef" "zhann" )
 
-#CATPPUCCIN_FLAVOR="macchiato"
-#CATPPUCCIN_SHOW_TIME=true
+# install theme from this repo: https://github.com/philip82148/simplerich-zsh-theme
 
 # CASE_SENSITIVE="true"
 
@@ -43,37 +42,23 @@ ZSH_THEME="dst"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
-plugins=(git colorize)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 # ALIASES
 
 # package management
-alias acquire='sudo apt-fast install'
-alias begone='sudo apt remove'
-alias scavenge='apt search'
-alias update='sudo apt update && sudo apt upgrade && flatpak update && brew update && brew upgrade'
-alias havei='apt list --installed | grep'
+alias acquire='rpm-ostree install'
+alias begone='rpm-ostree remove'
+alias scavenge='rpm-ostree search'
+alias update='rpm-ostree update && rpm-ostree upgrade && flatpak update && brew update && brew upgrade'
+alias havei='rpm list | grep'
 # flatpak
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
 alias flscavenge='flatpak search'
 alias flrun='flatpak run'
-
 # system
 alias reboot='systemctl reboot'
 alias poweroff='systemctl poweroff'
-
-# other
-# alias nano='kate'
-alias cat='batcat' # If it doesn't do this by default, for some reason.
-alias mkdir='mkdir -p'
-alias cd...='cd ../..'
-alias ec='emacsclient'
-
-# Make things work + fastfetch on zsh terminal open
-
-export PATH="$HOME/.config/emacs/bin:$PATH"
-
-fastfetch

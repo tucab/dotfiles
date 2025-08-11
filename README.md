@@ -1,4 +1,4 @@
-Hi! This are my personal dotfiles for easier setup during linux installs.
+Hi! This are my personal (opinionated) dotfiles for easier setup during linux installs.
 
 Credit to:
 https://www.nerdfonts.com/<br/>

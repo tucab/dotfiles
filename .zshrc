@@ -5,6 +5,7 @@ ZSH_THEME="simplerich"
 # ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "simonoff" "steeef" "zhann" )
 
 # install theme from this repo: https://github.com/philip82148/simplerich-zsh-theme
+# source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
 
 # CASE_SENSITIVE="true"
 
@@ -26,7 +27,7 @@ ZSH_THEME="simplerich"
 
 # DISABLE_AUTO_TITLE="true"
 
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # COMPLETION_WAITING_DOTS="true"
 
@@ -49,11 +50,11 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='rpm-ostree install'
-alias begone='rpm-ostree remove'
-alias scavenge='rpm-ostree search'
-alias update='rpm-ostree update && rpm-ostree upgrade && flatpak update && brew update && brew upgrade'
-alias havei='rpm list | grep'
+alias acquire='sudo apt-fast install'
+alias begone='sudo apt remove'
+alias scavenge='apt search'
+alias update='sudo apt update && sudo apt upgrade && flatpak update && brew update && brew upgrade'
+alias havei='apt list | grep'
 # flatpak
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'

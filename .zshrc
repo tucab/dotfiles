@@ -50,18 +50,21 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='sudo apt-fast install'
-alias begone='sudo apt remove'
+alias add='sudo apt-fast install'
+alias die='sudo aptitude remove'
 alias scavenge='apt search'
-alias update='sudo apt update && sudo apt upgrade && flatpak update && brew update && brew upgrade'
-alias havei='apt list | grep'
+alias update='sudo apt update && sudo apt upgrade && flatpak update && pipx upgrade-all && brew update && brew upgrade'
+alias havei='aptitude search' # need to update eventually
 # flatpak
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
-alias flscavenge='flatpak search'
 # system
 alias reboot='systemctl reboot'
 alias poweroff='systemctl poweroff'
 # misc
 unalias gg
-alias gg='exit'
+alias gg='exit' 
+alias bat='batcat'
+unalias _
+unalias egrep
+unalias fgrep

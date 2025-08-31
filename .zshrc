@@ -5,7 +5,7 @@ ZSH_THEME="simplerich"
 # ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "simonoff" "steeef" "zhann" )
 
 # install theme from this repo: https://github.com/philip82148/simplerich-zsh-theme
-# source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
+source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
 
 # CASE_SENSITIVE="true"
 
@@ -68,3 +68,4 @@ alias bat='batcat'
 unalias _
 unalias egrep
 unalias fgrep
+alias ls="eza --icons=never --color=always"

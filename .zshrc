@@ -5,7 +5,7 @@ ZSH_THEME="simplerich"
 # ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "simonoff" "steeef" "zhann" )
 
 # install theme from this repo: https://github.com/philip82148/simplerich-zsh-theme
-source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
+# source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
 
 # CASE_SENSITIVE="true"
 
@@ -50,11 +50,11 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias add='sudo apt-fast install'
-alias die='sudo aptitude remove'
+alias acquire='sudo apt-fast install -r'
+alias begone='sudo apt-fast remove'
 alias scavenge='apt search'
-alias update='sudo apt update && sudo apt upgrade && flatpak update && pipx upgrade-all && brew update && brew upgrade'
-alias havei='aptitude search' # need to update eventually
+alias update='sudo apt-fast update && sudo apt-fast safe-upgrade && flatpak update && pipx upgrade-all && brew update && brew upgrade'
+alias havei='dpkg-query -l'
 # flatpak
 alias fladd='flatpak install'
 alias flbegone='flatpak remove'
@@ -68,4 +68,4 @@ alias bat='batcat'
 unalias _
 unalias egrep
 unalias fgrep
-alias ls="eza --icons=never --color=always"
+alias ls-"eza --icons=never --color=always"

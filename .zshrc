@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='sudo apt-fast install -r'
+alias acquire='sudo apt-fast install'
 alias begone='sudo apt-fast remove'
 alias scavenge='apt search'
 alias update='sudo apt-fast update && sudo apt-fast safe-upgrade && flatpak update && pipx upgrade-all && brew update && brew upgrade'
@@ -66,6 +66,5 @@ unalias gg
 alias gg='exit' 
 alias bat='batcat'
 unalias _
-unalias egrep
-unalias fgrep
-alias ls-"eza --icons=never --color=always"
+alias ls='eza --icons=never --color=always'
+alias fastfetch2='fastfetch --config examples/7.jsonc'

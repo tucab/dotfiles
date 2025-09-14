@@ -17,5 +17,6 @@ return {
   { import = "astrocommunity.motion.mini-basics" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.ruby" },
-  { import = "astrocommunity.workflow.bad-practices-nvim" },
+  { import = "astrocommunity.pack.elixir-phoenix" },
+  { import = "astrocommunity.pack.nim" },
 }

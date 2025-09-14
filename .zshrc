@@ -66,5 +66,6 @@ unalias gg
 alias gg='exit' 
 alias bat='batcat'
 unalias _
+unalias ls
 alias ls='eza --icons=never --color=always'
 alias fastfetch2='fastfetch --config examples/16.jsonc'

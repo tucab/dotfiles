@@ -20,5 +20,4 @@ return {
   -- { import = "astrocommunity.pack.nim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
   -- { import = "astrocommunity.lsp.nvim-java" },
-  { import = "astrocommunity.completion.nvim-cmp" },
 }

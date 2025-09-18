@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 alias acquire='sudo apt-fast install'
 alias begone='sudo apt-fast remove'
 alias scavenge='apt search'
-alias update='sudo apt-fast update && sudo apt-fast safe-upgrade && flatpak update && pipx upgrade-all && brew update && brew upgrade'
+alias update='sudo apt-fast update && sudo apt-fast safe-upgrade && flatpak update && brew update && brew upgrade'
 alias havei='dpkg-query -l'
 # flatpak
 alias fladd='flatpak install'

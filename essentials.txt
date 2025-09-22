@@ -1,0 +1,21 @@
+* "Essential" programs
+
+- Neovim or emacs
+- Libreoffice
+- Kitty
+- Vesktop/Discord
+- Floorp/Thorium
+- Doom emacs or AstroNvim
+- Nano
+- Steam
+- Some music player, currently Harmonoid
+- Yt-dlp
+- TLP
+- Preload
+- Whatever languages you need
+- Glow
+- Homebrew
+- Flatpak/Flathub
+- OhMyZsh
+- Thunderbird if not using Emacs or do not feel like going through that headache
+- DE of choice

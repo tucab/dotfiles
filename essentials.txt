@@ -3,7 +3,7 @@
 - Neovim or emacs
 - Libreoffice
 - Kitty
-- Vesktop/Discord
+- Vesktop
 - Floorp/Thorium
 - Doom emacs or AstroNvim
 - Nano
@@ -13,9 +13,12 @@
 - TLP
 - Preload
 - Whatever languages you need
-- Glow
+    In my case that is ruby and python and its a good idea to get java lua
 - Homebrew
 - Flatpak/Flathub
+- Zsh
 - OhMyZsh
 - Thunderbird if not using Emacs or do not feel like going through that headache
 - DE of choice
+- Fastfetch and hyfetch
+    very essential

@@ -126,6 +126,32 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key(
+        [],
+        "XF86AudioLowerVolume",
+        lazy.spawn("amixer sset Master 5%-"),
+        desc="Lower volume by 5%",
+    ),
+    Key(
+        [],
+        "XF86AudioRaiseVolume",
+        lazy.spawn("amixer sset Master 5%+"),
+        desc="Raise volume by 5%",
+    ),
+    Key(
+        [],
+        "XF86AudioMute",
+        lazy.spawn("amixer sset Master 1+ toggle"),
+        desc="Mute/Unmute Volume",
+    ),
+    Key(
+        [],
+        "XF86AudioPlay",
+        lazy.spawn("playerctl play-pause"),
+        desc="Play/Pause player",
+    ),
+    Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
+    Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
 ]
 
 # Add key bindings to switch VTs in Wayland.
@@ -142,7 +168,17 @@ for vt in range(1, 8):
     )
 
 
-groups = [Group(i) for i in "123456789"]
+groups = [
+    Group("1"),
+    Group("2"),
+    Group("3", matches=[Match(wm_class=["/usr/bin/vesktop"])]),
+    Group("4"),
+    Group("5"),
+    Group("6"),
+    Group("7"),
+    Group("8"),
+    Group("9"),
+]
 
 for i in groups:
     keys.extend(
@@ -243,6 +279,14 @@ screens = [
                 ),
                 widget.Clock(
                     format="%Y-%m-%d %a %I:%M %p",
+                    background=catppuccin_colors["base"],
+                    foreground=catppuccin_colors["text"],
+                ),
+                widget.Volume(
+                    background=catppuccin_colors["base"],
+                    foreground=catppuccin_colors["text"],
+                ),
+                widget.Battery(
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
                 ),

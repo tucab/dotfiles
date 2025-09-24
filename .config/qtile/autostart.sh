@@ -4,3 +4,4 @@ setxkbmap -option caps:swapescape
 dunst &
 emacs --daemon
 kdeconnectd
+pulseaudio --start &

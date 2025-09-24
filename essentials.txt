@@ -13,12 +13,13 @@
 - TLP
 - Preload
 - Whatever languages you need
-    In my case that is ruby and python and its a good idea to get java lua
+    In my case that is ruby and python and its a good idea to get java, lua, etc.
 - Homebrew
 - Flatpak/Flathub
 - Zsh
 - OhMyZsh
 - Thunderbird if not using Emacs or do not feel like going through that headache
-- DE of choice
+- DE/WM of choice
+    Qtile for me, maybe cinnamon as well
 - Fastfetch and hyfetch
     very essential

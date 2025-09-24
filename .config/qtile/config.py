@@ -152,6 +152,7 @@ keys = [
     ),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
+    Key([mod], "l", lazy.spawn("i3lock"), desc="Lock screen"),
 ]
 
 # Add key bindings to switch VTs in Wayland.

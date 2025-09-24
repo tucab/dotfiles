@@ -59,7 +59,7 @@ catppuccin_colors = {
     "crust": "#181926",
 }
 
-# from libqtile.utils import guess_terminal
+os.system("feh --bg-scale ~/Pictures/bookmarks.png")
 
 mod = "mod4"
 terminal = "/usr/bin/kitty"
@@ -129,19 +129,19 @@ keys = [
     Key(
         [],
         "XF86AudioLowerVolume",
-        lazy.spawn("amixer sset Master 5%-"),
+        lazy.spawn("amixer -D pulse sset Master 5%-"),
         desc="Lower volume by 5%",
     ),
     Key(
         [],
         "XF86AudioRaiseVolume",
-        lazy.spawn("amixer sset Master 5%+"),
+        lazy.spawn("amixer -D pulse sset Master 5%+"),
         desc="Raise volume by 5%",
     ),
     Key(
         [],
         "XF86AudioMute",
-        lazy.spawn("amixer sset Master 1+ toggle"),
+        lazy.spawn("amixer -D pulse sset Master toggle"),
         desc="Mute/Unmute Volume",
     ),
     Key(
@@ -210,8 +210,8 @@ layouts = [
     layout.Bsp(
         border_focus=catppuccin_colors["lavender"],
         border_normal=catppuccin_colors["crust"],
-        border_width=3,
-        margin=3,
+        border_width=2,
+        margin=1,
         ratio=1.5,
         wrap_clients=True,
     ),
@@ -219,7 +219,7 @@ layouts = [
     layout.Max(
         border_focus=catppuccin_colors["crust"],
         border_normal=catppuccin_colors["mantle"],
-        border_width=3,
+        border_width=2,
     ),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -235,7 +235,7 @@ layouts = [
     #    font="Fira Sans",
     #    fontsize=12,
     #    inactive_bg=catppuccin_colors["mantle"],
-    #    inactive_fg=catppuccin_colors["text"],
+    #    inactive_fg=c
     #    panel_width=100,
     # ),
     # layout.VerticalTile(),
@@ -243,7 +243,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="Fira Sans",
+    font="FiraCode Nerd Font",
     fontsize=12,
     padding=3,
 )
@@ -253,13 +253,31 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(
+                widget.CurrentLayout(
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
-                    borderwidth=3,
+                ),
+                widget.Sep(
+                    foreground=catppuccin_colors["overlay1"],
+                    padding=3,
+                    size_percent=75,
+                ),
+                widget.GroupBox(
                     active=catppuccin_colors["lavender"],
+                    background=catppuccin_colors["base"],
+                    foreground=catppuccin_colors["text"],
+                    highlight_method="line",
+                    disable_drag=True,
+                    this_current_screen_border=catppuccin_colors["lavender"],
+                    this_screen_border=catppuccin_colors["lavender"],
+                    borderwidth=3,
                     inactive=catppuccin_colors["overlay1"],
+                    use_mouse_wheel=False,
+                ),
+                widget.Sep(
+                    foreground=catppuccin_colors["overlay1"],
+                    padding=3,
+                    size_percent=75,
                 ),
                 widget.Prompt(
                     background=catppuccin_colors["base"],
@@ -269,47 +287,75 @@ screens = [
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
                 ),
-                widget.Chord(
-                    chords_colors={
-                        "launch": (catppuccin_colors["red"], catppuccin_colors["text"]),
-                    },
-                    name_transform=lambda name: name.upper(),
+                widget.Spacer(
+                    background=catppuccin_colors["base"],
+                    foreground=catppuccin_colors["base"],
+                    length=bar.STRETCH,
                 ),
-                # widget.TextBox("default config", name="default"),
-                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                widget.Clock(
+                    format="%d %b %Y %a %H:%M:%S",
+                    background=catppuccin_colors["base"],
+                    foreground=catppuccin_colors["text"],
+                ),
+                widget.Spacer(
+                    background=catppuccin_colors["base"],
+                    foreground=catppuccin_colors["base"],
+                    length=bar.STRETCH,
+                ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.Systray(
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
                 ),
-                widget.Clock(
-                    format="%Y-%m-%d %a %I:%M %p",
-                    background=catppuccin_colors["base"],
-                    foreground=catppuccin_colors["text"],
+                widget.Sep(
+                    foreground=catppuccin_colors["overlay1"],
+                    padding=3,
+                    size_percent=75,
                 ),
                 widget.Volume(
+                    fmt="{} ",
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
+                    emoji=True,
+                    emoji_list=["", "", "", ""],
+                ),
+                widget.Sep(
+                    foreground=catppuccin_colors["overlay1"],
+                    padding=3,
+                    size_percent=75,
                 ),
                 widget.Battery(
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
+                    format="{char} {percent:1.0%}",
+                    charge_char="󰂏",
+                    discharge_char="󰂌",
+                    empty_char="󰂎",
+                    full_char="󰁹",
+                    not_charging_char="󰂃",
+                    unknown_char="󰂑",
+                ),
+                widget.Sep(
+                    foreground=catppuccin_colors["overlay1"],
+                    padding=3,
+                    size_percent=75,
                 ),
                 widget.QuickExit(
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
                 ),
             ],
-            24,
+            30,
             background=catppuccin_colors["mantle"],
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+            border_width=[2, 2, 2, 2],  # Draw top and bottom borders
             border_color=[
                 catppuccin_colors["lavender"],
-                catppuccin_colors["base"],
                 catppuccin_colors["lavender"],
-                catppuccin_colors["base"],
-            ],  # Borders are magenta
+                catppuccin_colors["lavender"],
+                catppuccin_colors["lavender"],
+            ],
+            margin=[2, 1, 0, 1],
         ),
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling

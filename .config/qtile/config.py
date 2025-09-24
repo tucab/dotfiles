@@ -152,7 +152,7 @@ keys = [
     ),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
-    Key([mod], "l", lazy.spawn("i3lock"), desc="Lock screen"),
+    Key([mod, "control"], "l", lazy.spawn("i3lock -c 24273a"), desc="Lock screen"),
 ]
 
 # Add key bindings to switch VTs in Wayland.
@@ -172,7 +172,7 @@ for vt in range(1, 8):
 groups = [
     Group("1"),
     Group("2"),
-    Group("3", matches=[Match(wm_class=["/usr/bin/vesktop"])]),
+    Group("3", matches=[Match(wm_class=["vesktop"])]),
     Group("4"),
     Group("5"),
     Group("6"),
@@ -216,7 +216,11 @@ layouts = [
         wrap_clients=True,
     ),
     # layout.Plasma(),
-    # layout.Max(),
+    layout.Max(
+        border_focus=catppuccin_colors["crust"],
+        border_normal=catppuccin_colors["mantle"],
+        border_width=3,
+    ),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Matrix(),
@@ -224,15 +228,16 @@ layouts = [
     # layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
-    layout.TreeTab(
-        active_bg=catppuccin_colors["crust"],
-        active_fg=catppuccin_colors["text"],
-        bg_color=catppuccin_colors["base"],
-        font="Fira Sans",
-        fontsize=12,
-        inactive_bg=catppuccin_colors["mantle"],
-        inactive_fg=catppuccin_colors["text"],
-    ),
+    # layout.TreeTab(
+    #    active_bg=catppuccin_colors["crust"],
+    #    active_fg=catppuccin_colors["text"],
+    #    bg_color=catppuccin_colors["base"],
+    #    font="Fira Sans",
+    #    fontsize=12,
+    #    inactive_bg=catppuccin_colors["mantle"],
+    #    inactive_fg=catppuccin_colors["text"],
+    #    panel_width=100,
+    # ),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]

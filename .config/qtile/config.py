@@ -63,7 +63,7 @@ os.system("feh --bg-scale ~/Pictures/bookmarks.png")
 
 mod = "mod4"
 terminal = "/usr/bin/kitty"
-browser = "/usr/bin/floorp"
+browser = "/usr/bin/firefox"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -152,7 +152,7 @@ keys = [
     ),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
-    Key([mod, "control"], "l", lazy.spawn("i3lock -c 24273a"), desc="Lock screen"),
+    Key([mod, "control", "shift"], "l", lazy.spawn("i3lock -c 24273a"), desc="Lock screen"),
     Key([mod], "d", lazy.spawn("rofi -show run"), desc="Launch rofi"),
 ]
 
@@ -219,8 +219,8 @@ layouts = [
     ),
     # layout.Plasma(),
     layout.Max(
-        border_focus=catppuccin_colors["crust"],
-        border_normal=catppuccin_colors["mantle"],
+        border_focus=catppuccin_colors["lavender"],
+        border_normal=catppuccin_colors["crust"],
         border_width=2,
     ),
     # Try more layouts by unleashing below layouts.
@@ -312,11 +312,12 @@ screens = [
                 ),
                 widget.Sep(
                     foreground=catppuccin_colors["overlay1"],
-                    padding=3,
+                    padding=5,
                     size_percent=75,
                 ),
                 widget.Volume(
                     fmt="{} ",
+		            unmuted_format="{char} {volume}%",
                     background=catppuccin_colors["base"],
                     foreground=catppuccin_colors["text"],
                     emoji=True,

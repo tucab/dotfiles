@@ -101,12 +101,12 @@ keys = [
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
     Key(
-        [mod, "shift"],
+        [mod],
         "Return",
         lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack",
     ),
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    Key(["control", "mod1"], "t", lazy.spawn(terminal), desc="Launch terminal"),
     Key(["control", "shift"], "f", lazy.spawn(browser), desc="Launch browser"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -222,6 +222,7 @@ layouts = [
         border_focus=catppuccin_colors["lavender"],
         border_normal=catppuccin_colors["crust"],
         border_width=2,
+        margin=1,
     ),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),

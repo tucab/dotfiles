@@ -5,7 +5,7 @@ ZSH_THEME="simplerich"
 # ZSH_THEME_RANDOM_CANDIDATES=( "muse" "aussiegeek" "bira" "candy" "crunch" "dst" "frisk" "macovsky" "mikeh" "murilasso" "simonoff" "steeef" "zhann" )
 
 # install theme from this repo: https://github.com/philip82148/simplerich-zsh-theme
-# source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
+source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
 
 # CASE_SENSITIVE="true"
 
@@ -14,7 +14,7 @@ ZSH_THEME="simplerich"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -64,8 +64,9 @@ alias poweroff='systemctl poweroff'
 # misc
 unalias gg
 alias gg='exit' 
-alias bat='batcat'
+# alias bat='batcat'
 unalias _
 unalias ls
 alias ls='eza --icons=never --color=always'
 alias fastfetch2='fastfetch --config examples/16.jsonc'
+alias e='emacsclient -r'

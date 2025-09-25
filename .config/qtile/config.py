@@ -214,6 +214,7 @@ layouts = [
         margin=1,
         ratio=1.5,
         wrap_clients=True,
+        border_on_single=True,
     ),
     # layout.Plasma(),
     layout.Max(

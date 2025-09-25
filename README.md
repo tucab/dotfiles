@@ -5,6 +5,7 @@ TODO:
 - Customize rofi
 - Customize dunst
 - Customize picom
+    (Half done, can still customize further)
 - Add screenshots
 
 All credit where due or something

@@ -153,6 +153,7 @@ keys = [
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
     Key([mod, "control"], "l", lazy.spawn("i3lock -c 24273a"), desc="Lock screen"),
+    Key([mod], "d", lazy.spawn("rofi -show run"), desc="Launch rofi"),
 ]
 
 # Add key bindings to switch VTs in Wayland.

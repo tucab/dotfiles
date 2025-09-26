@@ -1,11 +1,11 @@
 Hi! This are my personal (opinionated) dotfiles for easier setup.
 
 TODO: 
-- Add rofi
-- Customize rofi
-- Customize dunst
-- Customize picom
+[x] Add rofi
+[ ] Customize rofi
+[ ] Customize dunst
+[ ] Customize picom
     (Half done, can still customize further)
-- Add screenshots
+[ ] Add screenshots
 
 All credit where due or something

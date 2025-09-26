@@ -217,12 +217,12 @@ layouts = [
         wrap_clients=True,
         border_on_single=True,
     ),
-    layout.Plasma(
-        border_focus=catppuccin_colors["lavender"],
-        border_normal=catppuccin_colors["crust"],
-        border_width=2,
-        margin=1,
-    ),
+    # layout.Plasma(
+    #     border_focus=catppuccin_colors["lavender"],
+    #     border_normal=catppuccin_colors["crust"],
+    #     border_width=2,
+    #     margin=1,
+    # ),
     layout.Max(
         border_focus=catppuccin_colors["lavender"],
         border_normal=catppuccin_colors["crust"],
@@ -233,9 +233,13 @@ layouts = [
     # layout.Matrix(),
     layout.MonadTall(
         border_focus=catppuccin_colors["lavender"],
+        border_focus_fixed=catppuccin_colors["lavender"],
         border_normal=catppuccin_colors["crust"],
+        border_normal_fixed=catppuccin_colors["crust"],
         border_width=2,
         margin=1,
+        max_ratio=0.8,
+        min_ratio=0.2,
     ),
     # layout.MonadWide(),
     # layout.RatioTile(
@@ -436,7 +440,6 @@ wl_xcursor_size = 24
 def autostart():
     home = os.path.expanduser("~/.config/qtile/autostart.sh")
     subprocess.call(home)
-
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the

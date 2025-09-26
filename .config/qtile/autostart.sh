@@ -6,4 +6,4 @@ kdeconnectd &
 pulseaudio --start &
 flameshot &
 emacs --daemon
-eval $(dbus-launch --sh-syntax)
+eval '$(dbus-launch --sh-syntax)'

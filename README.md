@@ -24,6 +24,8 @@ These are my personal (opinionated) dotfiles for easier setup.
 
 [swaylock](https://github.com/catppuccin/swaylock)
 
+[fuzzel](https://github.com/catppuccin/fuzzel/)
+
 ---
 
 All credit where due or something

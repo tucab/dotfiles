@@ -1,6 +1,6 @@
-# Hi!
+# Welcome :)
 
-These are my personal (opinionated) dotfiles for easier setup.
+These are my (opinionated) dotfiles
 
 ---
 

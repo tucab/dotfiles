@@ -1,4 +1,5 @@
-Hi! This are my personal (opinionated) dotfiles for easier setup.
+#Hi!
+These are my personal (opinionated) dotfiles for easier setup.
 
 TODO: 
 

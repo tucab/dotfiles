@@ -2,15 +2,13 @@
 
 - Neovim or emacs
 - Libreoffice
-- Kitty
+- Kitty/Other terminal emulator
 - Vesktop
 - Floorp/Thorium
 - Doom emacs or AstroNvim
-- Nano
 - Steam
 - Some music player, currently Harmonoid
-- Yt-dlp
-- TLP
+- Power-profiles-daemon
 - Preload
 - Whatever languages you need
     In my case that is ruby and python and its a good idea to get java, lua, etc.
@@ -18,8 +16,7 @@
 - Flatpak/Flathub
 - Zsh
 - OhMyZsh
-- Thunderbird if not using Emacs or do not feel like going through that headache
 - DE/WM of choice
-    Qtile for me, maybe cinnamon as well
-- Fastfetch and hyfetch
+    Niri for me, maybe cinnamon as well
+- Fastfetch
     very essential

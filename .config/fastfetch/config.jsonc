@@ -20,7 +20,7 @@
         },
         {
             "type": "os",
-            "key": "├󰣚",
+            "key": "├",
             "keyColor": "yellow"
         },
         {
@@ -40,7 +40,7 @@
         },
         "break",
         {
-            "type": "de",
+            "type": "wm",
             "key": " DE/WM",
             "keyColor": "blue"
         },
@@ -60,13 +60,13 @@
             "keyColor": "blue"
         },
         {
-            "type": "terminal",
-            "key": "├",
+            "type": "wallpaper",
+            "key": "├󰸉",
             "keyColor": "blue"
         },
         {
-            "type": "wallpaper",
-            "key": "└󰸉",
+            "type": "terminal",
+            "key": "└",
             "keyColor": "blue"
         },
         "break",

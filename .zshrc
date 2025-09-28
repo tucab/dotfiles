@@ -14,7 +14,7 @@ source ~/simplerich-zsh-theme/zsh-git-prompt/zshrc.sh
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -50,23 +50,20 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias acquire='sudo apt-fast install'
-alias begone='sudo apt-fast remove'
-alias scavenge='apt search'
-alias update='sudo apt-fast update && sudo apt-fast safe-upgrade && flatpak update && brew update && brew upgrade'
-alias havei='dpkg-query -l'
-# flatpak
-alias fladd='flatpak install'
-alias flbegone='flatpak remove'
-# system
-alias reboot='systemctl reboot'
-alias poweroff='systemctl poweroff'
+alias gets='sudo dnf install'
+alias chomp='sudo dnf remove'
+alias query='dnf search'
+alias update='sudo dnf update && sudo dnf upgrade && flatpak update && brew update && brew upgrade'
 # misc
 unalias gg
-alias gg='exit' 
-# alias bat='batcat'
+alias gg='exit'
 unalias _
 unalias ls
 alias ls='eza --icons=never --color=always'
 alias fastfetch2='fastfetch --config examples/16.jsonc'
-alias e='emacsclient -r'
+alias e='emacsclient -t'
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$HOME/.config/emacs/bin:$PATH"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval $(thefuck --alias)

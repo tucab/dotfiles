@@ -4,6 +4,11 @@ These are my personal (opinionated) dotfiles for easier setup.
 
 ---
 
+![Screenshot 1, showing Doom Emacs, fastfetch, and pipes.sh](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-09-28%2009-00-59.png)
+![Screenshot 2, showing fastfetch again](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-09-28%2009-02-04.png)
+
+---
+
 ## Credits: 
     
 [nerd fonts](https://www.nerdfonts.com/)

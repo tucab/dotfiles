@@ -4,13 +4,17 @@ These are my (opinionated) dotfiles
 
 ---
 
+<details>
+    <summary>Screenshots</summary>
+
 ![A screenshot, showing the wallpaper and waybar](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-09-28%2009-43-22.png)
 ![Another screenshot, showing Doom Emacs, fastfetch, and pipes.sh](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-09-28%2009-00-59.png)
 ![Another screenshot, showing fastfetch again](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-09-28%2009-02-04.png)
 
----
+</details>
 
-## Credits: 
+<details>
+    <summary>Credits</summary>
     
 [nerd fonts](https://www.nerdfonts.com/)
 
@@ -31,6 +35,8 @@ These are my (opinionated) dotfiles
 [swaylock](https://github.com/catppuccin/swaylock)
 
 [fuzzel](https://github.com/catppuccin/fuzzel/)
+
+</details>
 
 ---
 

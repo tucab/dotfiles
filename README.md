@@ -1,10 +1,10 @@
-#Hi!
+# Hi!
 
 These are my personal (opinionated) dotfiles for easier setup.
 
 ---
 
-Credits: 
+## Credits: 
     
 [nerd fonts](https://www.nerdfonts.com/)
 

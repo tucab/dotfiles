@@ -38,6 +38,7 @@
 		"custom/right_div#4",
 		"network",
 		"bluetooth",
+        "power-profiles-daemon",
 		"custom/right_div#5"
 	],
 	"modules-right": [

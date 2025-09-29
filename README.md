@@ -18,7 +18,7 @@ Here are my dotfiles
     
 [nerd fonts](https://www.nerdfonts.com/)
 
-[google fonts](https://fonts.google.com/specimen/Roboto+Serif/)
+[roboto font (google fonts)](https://fonts.google.com/specimen/Roboto+Serif/)
 
 [mechabar](https://github.com/sejjy/mechabar)
 

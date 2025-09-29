@@ -36,17 +36,9 @@ Here are my dotfiles
 
 [doom emacs](https://github.com/doomemacs/doomemacs)
 
-[astro nvim](https://astronvim.com/)
+[astronvim](https://astronvim.com/)
 
-[swaylock](https://github.com/catppuccin/swaylock)
-
-[fuzzel](https://github.com/catppuccin/fuzzel/)
-
-[bat](https://github.com/catppuccin/bat/)
-
-[btop](https://github.com/catppuccin/btop/)
-
-[cava](https://github.com/catppuccin/cava/)
+[catppuccin](https://github.com/catppuccin/)
 
 </details>
 

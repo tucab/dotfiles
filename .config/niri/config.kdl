@@ -288,6 +288,7 @@ spawn-at-startup "waybar"
 spawn-sh-at-startup "swaybg -m stretch -i /home/juno/Pictures/bookmarks.png"
 spawn-sh-at-startup "emacs --daemon"
 spawn-sh-at-startup "kdeconnectd"
+spawn-sh-at-startup "foot --server"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -378,7 +379,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Control+Alt+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Control+Alt+T hotkey-overlay-title="Open a Terminal: foot" { spawn "footclient"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Control+Shift+F hotkey-overlay-title="Open a browser: floorp" { spawn "flatpak" "run" "one.ablaze.floorp"; }

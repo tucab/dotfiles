@@ -2,21 +2,20 @@
 
 - Neovim or emacs
 - Libreoffice
-- Kitty/Other terminal emulator
+- Kitty
 - Vesktop
-- Floorp/Thorium
-- Doom emacs or AstroNvim
+- Floorp
+- Doom emacs/AstroNvim
 - Steam
-- Some music player, currently Harmonoid
+- Some music player, currently kew
 - Power-profiles-daemon
 - Preload
 - Whatever languages you need
-    In my case that is ruby and python and its a good idea to get java, lua, etc.
+    In my case that is ruby and python, and its a good idea to get java, lua, etc.
 - Homebrew
-- Flatpak/Flathub
-- Zsh
-- OhMyZsh
+- Flatpak & Flathub
+- Zsh & OhMyZsh
 - DE/WM of choice
-    Niri for me, maybe cinnamon as well
+    Niri for me, maybe cinnamon/xfce as well
 - Fastfetch
     very essential

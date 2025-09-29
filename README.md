@@ -36,6 +36,10 @@ Here are my dotfiles
 
 [fuzzel](https://github.com/catppuccin/fuzzel/)
 
+[bat](https://github.com/catppuccin/bat/)
+
+[btop](https://github.com/catppuccin/btop/)
+
 </details>
 
 ---

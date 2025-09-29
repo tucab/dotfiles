@@ -3,6 +3,16 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+overview {
+    backdrop-color "#181926"
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 switch-events {
     lid-close {
         spawn "swaylock" "-f";
@@ -78,7 +88,7 @@ input {
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
-    focus-follows-mouse max-scroll-amount="50%"
+    focus-follows-mouse max-scroll-amount="60%"
 }
 
 // You can configure outputs by their name, which you can find

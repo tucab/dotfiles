@@ -2,8 +2,6 @@
 
 ![A gif of the screenshots](https://github.com/tucab/dotfiles/blob/master/screenshots/ezgif.com-animated-gif-maker.gif)
 
----
-
 <!--
 <details>
     <summary>Screenshots</summary>
@@ -39,7 +37,3 @@
 [catppuccin](https://github.com/catppuccin/)
 
 </details>
-
----
-
-All credit where due or something

@@ -1,6 +1,6 @@
-# Welcome :)
+# Welcome :3
 
-These are my (opinionated) dotfiles
+Here are my dotfiles
 
 ---
 

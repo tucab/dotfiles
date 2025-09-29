@@ -25,7 +25,7 @@ zstyle ':omz:update' mode auto # update automatically without asking
 
 # DISABLE_LS_COLORS="true"
 
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 ENABLE_CORRECTION="true"
 

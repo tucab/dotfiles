@@ -40,6 +40,8 @@ Here are my dotfiles
 
 [btop](https://github.com/catppuccin/btop/)
 
+[cava](https://github.com/catppuccin/cava/)
+
 </details>
 
 ---

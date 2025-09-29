@@ -18,6 +18,8 @@ Here are my dotfiles
     
 [nerd fonts](https://www.nerdfonts.com/)
 
+[google fonts](https://fonts.google.com/specimen/Roboto+Serif/)
+
 [mechabar](https://github.com/sejjy/mechabar)
 
 [posy cursor (linux port)](https://github.com/simtrami/posy-improved-cursor-linux)

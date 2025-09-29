@@ -2,8 +2,11 @@
 
 Here are my dotfiles
 
+![A gif of the screenshots](https://github.com/tucab/dotfiles/blob/master/screenshots/ezgif.com-animated-gif-maker.gif)
+
 ---
 
+<!--
 <details>
     <summary>Screenshots</summary>
 
@@ -12,6 +15,7 @@ Here are my dotfiles
 ![Another screenshot, showing fastfetch again](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-09-28%2009-02-04.png)
 
 </details>
+-->
 
 <details>
     <summary>Credits</summary>

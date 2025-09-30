@@ -35,6 +35,7 @@ input {
 
             // For example:
             layout "us"
+            variant "altgr-intl"
             options "caps:swapescape"
 
             // If this section is empty, niri will fetch xkb settings

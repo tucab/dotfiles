@@ -8,7 +8,7 @@
 - Doom emacs/AstroNvim
 - Steam
 - Some music player, currently kew
-- Power-profiles-daemon
+- power-profiles-daemon
 - Preload
 - Whatever languages you need
     In my case that is ruby and python, and its a good idea to get java, lua, etc.

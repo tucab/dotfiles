@@ -50,10 +50,11 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias gets='sudo dnf install'
-alias chomp='sudo dnf remove'
-alias query='dnf search'
-alias update='sudo dnf update && sudo dnf upgrade && flatpak update && brew update && brew upgrade'
+alias gets='sudo apt-fast install'
+alias chomp='sudo apt-fast remove'
+alias query='apt search'
+alias havei='apt list --installed | grep'
+alias update='sudo apt-fast update && sudo apt-fast upgrade && flatpak update && brew update && brew upgrade'
 # misc
 unalias gg
 alias gg='exit'
@@ -66,5 +67,7 @@ alias e='emacsclient -t'
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$HOME/.config/emacs/bin:$PATH"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval $(thefuck --alias)
 export COLORTERM=truecolor
+export EDITOR="emacsclient -t"
+export VISUAL="$EDITOR"
+export PATH="$PATH:/home/juno/.local/bin"

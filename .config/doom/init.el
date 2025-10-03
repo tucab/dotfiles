@@ -25,7 +25,7 @@
        ;;(corfu +orderless)  ; complete with cap(f), cape and a flying feather!
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
-       ivy               ; a search engine for love and life
+       ;;ivy               ; a search engine for love and life
        ;;vertico           ; the search engine of the future
 
        :ui
@@ -85,7 +85,7 @@
 
        :checkers
        syntax              ; tasing you for every semicolon you forget
-       (spell +flyspell) ; tasing you for misspelling mispelling
+       ;;(spell +flyspell) ; tasing you for misspelling mispelling
        ;;grammar           ; tasing grammar mistake every you make
 
        :tools
@@ -104,7 +104,7 @@
        magit             ; a git porcelain for Emacs
        make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
-       ;;pdf               ; pdf enhancements
+       pdf               ; pdf enhancements
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        ;;tree-sitter       ; syntax and parsing, sitting in a tree...
@@ -182,7 +182,7 @@
        ;;zig               ; C, but simpler
 
        :email
-       (mu4e +org +gmail)
+       ;;(mu4e +org +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
 

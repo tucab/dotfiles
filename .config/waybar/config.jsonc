@@ -13,8 +13,8 @@
 	------------*/
 
 	"modules-left": [
-        "power-profiles-daemon",
-		"custom/left_div#1",
+//        "power-profiles-daemon",
+//		"custom/left_div#1",
 		"niri/workspaces",
 		"custom/right_div#1",
 		"niri/window"

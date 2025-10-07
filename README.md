@@ -1,8 +1,10 @@
 # Welcome :3
 
-![A gif of the screenshots](https://github.com/tucab/dotfiles/blob/master/screenshots/ezgif.com-animated-gif-maker.gif)
+![Updated screenshot](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-10-07%2008-09-18.png)
 
 <!--
+![A gif of the screenshots](https://github.com/tucab/dotfiles/blob/master/screenshots/ezgif.com-animated-gif-maker.gif)
+
 TODO: Add more screenshots and update the current ones.
 -->
 

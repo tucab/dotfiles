@@ -134,7 +134,7 @@ input {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 5
+    gaps 3
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -220,7 +220,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 4
+        width 5
         active-color "#b7bdf8"
         inactive-color "#24273a"
 
@@ -300,6 +300,7 @@ spawn-at-startup "mako"
 spawn-sh-at-startup "swaybg -m fill -i /home/juno/Pictures/wallpaper.png"
 spawn-sh-at-startup "emacs --daemon"
 spawn-sh-at-startup "kdeconnectd"
+spawn-sh-at-startup "/home/juno/.cargo/bin/mprisence"
 // spawn-sh-at-startup "foot --server"
 
 hotkey-overlay {

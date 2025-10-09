@@ -1,6 +1,6 @@
 # Welcome :3
 
-![Updated screenshot](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-10-07%2008-09-18.png)
+![Updated screenshot](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-10-09%2011-09-47.png)
 
 <!--
 ![A gif of the screenshots](https://github.com/tucab/dotfiles/blob/master/screenshots/ezgif.com-animated-gif-maker.gif)
@@ -13,9 +13,7 @@ TODO: Add more screenshots and update the current ones.
     
 [nerd fonts](https://www.nerdfonts.com/)
 
-[roboto font (google fonts)](https://fonts.google.com/specimen/Roboto+Serif/)
-
-[mechabar](https://github.com/sejjy/mechabar)
+[Google fonts](https://fonts.google.com/)
 
 [posy cursor (linux port)](https://github.com/simtrami/posy-improved-cursor-linux)
 

@@ -8,7 +8,6 @@
     // Choose the order of the modules
     "modules-left": [
         "niri/workspaces",
-        "tray",
         "niri/window",
     ],
     "modules-center": [
@@ -16,6 +15,7 @@
     ],
     "modules-right": [
         "custom/media",
+        "tray",
         "pulseaudio",
         "backlight",
         "battery",

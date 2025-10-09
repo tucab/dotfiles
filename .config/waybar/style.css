@@ -123,7 +123,7 @@ button:hover {
 
 #clock {
     background-color: @mantle;
-    color: @text;
+    color: @lavender;
 }
 
 #battery {

@@ -98,7 +98,7 @@
         "format": "{:%H:%M}",
         "tooltop": false,
         // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        // "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -131,10 +131,10 @@
         "format-full": "BAT: FULL",
         "format-charging": "BAT: {capacity}+",
         "format-plugged": "BAT: ~-{capacity}",
-        "format-alt": "{time} {icon}",
+        // "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        // "format-icons": ["", "", "", "", ""]
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -177,7 +177,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        // "on-click": "pavucontrol"
     },
     "custom/media": {
         "format": "{icon} {text}",

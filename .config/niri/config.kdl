@@ -293,6 +293,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
+spawn-at-startup "flameshot"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -402,7 +403,7 @@ binds {
     Control+Alt+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Control+Shift+F hotkey-overlay-title="Open a browser: firefox" { spawn "firefox"; }
+    Control+Shift+F hotkey-overlay-title="Open a browser: chromium" { spawn "chromium"; }
     Control+Alt+F hotkey-overlay-title="Open the file browser: nemo" { spawn "nemo"; }
     Mod+E hotkey-overlay-title="Open emacs" { spawn "emacsclient" "-c"; }
 

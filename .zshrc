@@ -50,11 +50,11 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 
 # package management
-alias gets='sudo apt-fast install'
-alias chomp='sudo apt-fast remove'
-alias query='apt search'
-alias havei='apt list --installed | grep'
-alias update='sudo apt-fast update && sudo apt-fast upgrade && flatpak update && brew update && brew upgrade'
+alias gets='sudo emerge --ask --verbose'
+alias chomp='sudo emerge --depclean'
+alias query='emerge --pretend'
+alias havei='sudo equery | grep'
+alias update='sudo emerge --sync && sudo emerge --update --deep @world && brew update && brew upgrade'
 # misc
 unalias gg
 alias gg='exit'
@@ -62,12 +62,12 @@ unalias _
 unalias ls
 alias ls='eza --icons=never --color=always'
 alias fastfetch2='fastfetch --config examples/16.jsonc'
-alias e='emacsclient -t'
+alias n='nvim'
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 export PATH="$HOME/.config/emacs/bin:$PATH"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export COLORTERM=truecolor
-export EDITOR="emacsclient -t"
+export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export PATH="$PATH:/home/juno/.local/bin"

@@ -21,10 +21,14 @@ function git_current_branch() {
     git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD
 }
 
+bind 'set completion-ignore-case on'
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
 alias ls="eza --icons=never --color=always"
 alias n="nvim"
 alias gg="exit"
-alias fastfetch2="fastfetch --config example/16.jsonc"
+alias fastfetch2="fastfetch --config examples/16.jsonc"
 alias ga="git add"
 alias gcmsg="git commit --message"
 alias ggpull='git pull origin "$(git_current_branch)"'

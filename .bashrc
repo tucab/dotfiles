@@ -34,4 +34,5 @@ export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export PATH="$PATH:/home/juno/.local/bin"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 PS1='\w \e[34m->\e[0m '

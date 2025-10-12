@@ -16,6 +16,11 @@ fi
 
 
 # Put your fun stuff here.
+
+function git_current_branch() {
+    git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD
+}
+
 alias ls="eza --icons=never --color=always"
 alias n="nvim"
 alias gg="exit"

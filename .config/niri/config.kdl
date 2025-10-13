@@ -300,7 +300,7 @@ spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-moni
 
 spawn-sh-at-startup "swaybg -m fill -i /home/juno/Pictures/wallpaper.png"
 spawn-sh-at-startup "kdeconnectd"
-spawn-sh-at-startup "/home/juno/.cargo/bin/mprisence"
+// spawn-sh-at-startup "/home/juno/.cargo/bin/mprisence"
 // spawn-sh-at-startup "emacs --daemon"
 // spawn-sh-at-startup "foot --server"
 

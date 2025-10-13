@@ -19,6 +19,7 @@
         "pulseaudio",
         "backlight",
         "battery",
+	"idle_inhibitor",
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -85,8 +86,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "AWAKE",
-            "deactivated": "SLEEP"
+            "activated": "CAF",
+            "deactivated": "DCF"
         }
     },
     "tray": {
@@ -129,8 +130,8 @@
         },
         "format": "BAT: {capacity}%",
         "format-full": "BAT: FULL",
-        "format-charging": "BAT: {capacity}+",
-        "format-plugged": "BAT: ~-{capacity}",
+        "format-charging": "BAT: ^{capacity}%",
+        "format-plugged": "BAT: ~-{capacity}%",
         // "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",

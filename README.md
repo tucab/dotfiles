@@ -1,6 +1,6 @@
 # Welcome :3
 
-![Updated screenshot](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-10-09%2011-09-47.png)
+![Updated screenshot](https://github.com/tucab/dotfiles/blob/master/screenshots/Screenshot%20from%202025-10-13%2018-00-57.png)
 
 <!--
 ![A gif of the screenshots](https://github.com/tucab/dotfiles/blob/master/screenshots/ezgif.com-animated-gif-maker.gif)
@@ -22,10 +22,6 @@ TODO: Add more screenshots and update the current ones.
 [niri](https://github.com/YaLTeR/niri)
 
 [kitty](https://sw.kovidgoyal.net/kitty/)
-
-[doom emacs](https://github.com/doomemacs/doomemacs)
-
-[astronvim](https://astronvim.com/)
 
 [catppuccin](https://github.com/catppuccin/)
 

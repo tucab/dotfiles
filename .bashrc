@@ -17,9 +17,10 @@ fi
 
 # Put your fun stuff here.
 
-function git_current_branch() {
-    git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD
+git_current_branch() {
+    git rev-parse --abbrev-ref HEAD 2>/dev/null
 }
+
 
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
@@ -41,5 +42,4 @@ export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export PATH="$PATH:/home/juno/.local/bin"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-PS1='\w \e[34m->\e[0m '
+eval "$(starship init bash)"

@@ -7,7 +7,7 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}'
 zstyle ':completion:*' menu select=long
 zstyle ':completion:*' original true
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle :compinstall filename '/home/juno/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -44,10 +44,9 @@ alias ....="cd ../../.."
 eval "$(starship init zsh)"
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
-# export PATH="$PATH:/home/juno/.local/bin"
 typeset -gU path
 path=(
-  /home/juno/.local/bin
+  ~/.local/bin
   $path
 )
 brew () {

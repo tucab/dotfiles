@@ -29,6 +29,7 @@ bind 'TAB:menu-complete'
 alias ls="eza --icons=never --color=always"
 alias n="nvim"
 alias gg="exit"
+alias rm="rm -i"
 alias fastfetch2="fastfetch --config examples/16.jsonc"
 alias ga="git add"
 alias gcmsg="git commit --message"

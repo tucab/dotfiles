@@ -20,11 +20,14 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+setopt HIST_IGNORE_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt SHARE_HISTORY
+
 git_current_branch() {
     git rev-parse --abbrev-ref HEAD 2>/dev/null
 }
 
-eval "$(starship init zsh)"
 alias ls="eza --icons=never --color=always"
 alias n="nvim"
 alias gg="exit"
@@ -38,8 +41,18 @@ alias gc='git commit --verbose'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+eval "$(starship init zsh)"
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
-export PATH="$PATH:/home/juno/.local/bin"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# export PATH="$PATH:/home/juno/.local/bin"
+typeset -gU path
+path=(
+  /home/juno/.local/bin
+  $path
+)
+brew () {
+  unset -f brew
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  brew "$@"
+}
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

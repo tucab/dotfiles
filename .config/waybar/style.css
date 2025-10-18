@@ -30,15 +30,6 @@ window#waybar.solo {
 }
 */
 
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-
 button {
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
@@ -128,12 +119,12 @@ button:hover {
 
 #battery {
     background-color: @mantle;
-    color: @text;
+    color: @lavender;
 }
 
 #battery.charging, #battery.plugged {
     background-color: @mantle;
-    color: @text;
+    color: @lavender;
 }
 
 @keyframes blink {
@@ -273,12 +264,12 @@ label:focus {
 
 #idle_inhibitor {
     background-color: @mantle;
-    color: @text;
+    color: @lavender;
 }
 
 #idle_inhibitor.activated {
     background-color: @mantle;
-    color: @text;
+    color: @lavender;
 }
 
 #mpd {

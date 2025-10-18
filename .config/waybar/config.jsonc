@@ -7,19 +7,19 @@
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "niri/workspaces",
+        // "niri/workspaces",
+	"idle_inhibitor",
         "niri/window",
     ],
     "modules-center": [
         "clock",
     ],
     "modules-right": [
-        "custom/media",
+        // "custom/media",
         "tray",
-        "pulseaudio",
         "backlight",
+        "pulseaudio",
         "battery",
-	"idle_inhibitor",
     ],
     // Modules configuration
     // "sway/workspaces": {

@@ -220,7 +220,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 5
+        width 3
         active-color "#b7bdf8"
         inactive-color "#24273a"
 
@@ -263,7 +263,7 @@ layout {
         softness 30
 
         // Spread expands the shadow.
-        spread 5
+        spread 3
 
         // Offset moves the shadow relative to the window.
         offset x=0 y=5
@@ -299,7 +299,7 @@ spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-moni
 
 spawn-sh-at-startup "swaybg -m fill -i /home/juno/Pictures/wallpaper.png"
 spawn-sh-at-startup "mprisence"
-// spawn-sh-at-startup "kdeconnectd"
+spawn-sh-at-startup "kdeconnectd"
 // spawn-sh-at-startup "emacs --daemon"
 // spawn-sh-at-startup "foot --server"
 
@@ -418,7 +418,7 @@ binds {
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "pactl set-sink-volume @DEFAULT_SINK@ +5%"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "pactl set-sink-volume @DEFAULT_SINK@ -5%"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "pactl set-sink-mute @DEFAULT_SINK@ toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "pactl set-sink-mute @DEFAULT_SOURCE@ toggle"; }
+    Control+XF86AudioRaiseVolume     allow-when-locked=true { spawn-sh "pactl set-sink-mute @DEFAULT_SOURCE@ toggle"; }
 
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),

@@ -1,4 +1,3 @@
-
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored
@@ -44,9 +43,13 @@ alias ....="cd ../../.."
 eval "$(starship init zsh)"
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+export BAT_STYLE="plain"
+export BAT_THEME="Catppuccin Macchiato"
 typeset -gU path
 path=(
   ~/.local/bin
+  ~/.cargo/bin
   $path
 )
 brew () {

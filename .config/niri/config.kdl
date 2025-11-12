@@ -45,6 +45,7 @@ input {
 
         // Enable numlock on startup, omitting this setting disables it.
         numlock
+	// repeat-delay 600
     }
 
     // Next sections include libinput settings.
@@ -69,7 +70,7 @@ input {
         // off
         // natural-scroll
         // accel-speed 0.2
-        // accel-profile "flat"
+        accel-profile "flat"
         // scroll-method "no-scroll"
     }
 
@@ -278,10 +279,10 @@ layout {
     // Top and bottom struts will simply add outer gaps in addition to the area occupied by
     // layer-shell panels and regular gaps.
     struts {
-        // left 64
-        // right 64
-        // top 64
-        // bottom 64
+        // left 3
+        // right 3
+        // top 3
+        // bottom 3
     }
 }
 
@@ -297,6 +298,7 @@ spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-moni
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
+// spawn-sh-at-startup "swaybg -m stretch -i /home/juno/Downloads/what.png"
 spawn-sh-at-startup "swaybg -m fill -i /home/juno/Pictures/wallpaper.png"
 spawn-sh-at-startup "mprisence"
 spawn-sh-at-startup "kdeconnectd"
@@ -402,7 +404,7 @@ binds {
     Control+Alt+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Control+Shift+F hotkey-overlay-title="Open a browser: chromium" { spawn "chromium"; }
+    Control+Shift+F hotkey-overlay-title="Open a browser: librewolf" { spawn "librewolf"; }
     Control+Alt+F hotkey-overlay-title="Open the file browser: nautilus" { spawn "nautilus"; }
     Mod+Control+Backspace hotkey-overlay-title="Logout" { spawn "wlogout"; }
     // Mod+E hotkey-overlay-title="Open emacs" { spawn "emacs"; }

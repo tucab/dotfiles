@@ -40,7 +40,6 @@ alias gc='git commit --verbose'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-eval "$(starship init zsh)"
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
@@ -52,9 +51,6 @@ path=(
   ~/.cargo/bin
   $path
 )
-brew () {
-  unset -f brew
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-  brew "$@"
-}
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(starship init zsh)"
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
